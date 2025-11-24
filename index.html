@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Werkstatt 77</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              swiss: {
+                red: '#ff3333',
+                black: '#111111',
+                white: '#ffffff',
+                offwhite: '#f4f4f4',
+                gray: '#999999'
+              }
+            },
+            fontFamily: {
+              sans: ['"Inter"', 'Helvetica', 'Arial', 'sans-serif'],
+              display: ['"Inter"', 'Helvetica', 'sans-serif'],
+            },
+            spacing: {
+              '128': '32rem',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #ffffff;
+        color: #111111;
+        overflow-x: hidden;
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      
+      /* Custom Selection */
+      ::selection {
+        background: #ff3333;
+        color: #ffffff;
+      }
+
+      /* Grid Lines helper */
+      .grid-line {
+        border-right: 1px solid #e5e5e5;
+      }
+      
+      .swiss-border-t {
+        border-top: 4px solid #111111;
+      }
+      .swiss-border-b {
+        border-bottom: 4px solid #111111;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "three": "https://aistudiocdn.com/three@^0.181.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.4.1",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "d3": "https://aistudiocdn.com/d3@^7.9.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
